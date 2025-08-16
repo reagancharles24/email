@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inbox Archive — Cerulean / Project 0:00 (1998)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+/* 90s-ish styling */
+body{background:#C7D1D9 url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==') repeat;font-family:Verdana,Arial,sans-serif;font-size:14px;color:#111;margin:0}
+#wrap{width:860px;margin:24px auto;background:#FDFCF7;border:1px solid #9aa8b3;box-shadow:0 0 0 3px #e5eaee}
+header{background:#2F5A8B;color:#fff;padding:10px 14px;font-size:14px;border-bottom:2px solid #23486d}
+.sub{font-size:11px;opacity:.9}
+nav{background:#e9eff5;border-bottom:1px solid #cbd7e1;padding:8px 10px;font-size:12px}
+nav a{color:#1f4b78;text-decoration:none;margin-right:12px}
+nav a:hover{text-decoration:underline}
+.layout{display:grid;grid-template-columns:240px 1fr}
+.side{background:#f3f6f8;border-right:1px solid #cdd7e0;padding:10px}
+.main{padding:10px}
+.mailbox{width:100%;border-collapse:collapse;font-size:12px}
+.mailbox th,.mailbox td{border:1px solid #cfd8e1;padding:6px;background:#fff}
+.mailbox th{background:#eaf0f6;text-align:left;color:#2a4e78}
+.from{white-space:nowrap}
+.btn{display:inline-block;padding:3px 8px;border:1px solid #9fb3c3;background:#eef4fa;color:#1f4b78;text-decoration:none;border-radius:3px;font-size:12px}
+.btn:hover{background:#e3eef9}
+.card{background:#fff;border:1px solid #cfd8e1;margin:10px 0;padding:12px}
+h2{font-size:16px;margin:0 0 6px}
+.meta{font-family:"Courier New",monospace;font-size:12px;color:#333;background:#fafafa;border:1px dashed #d7dee6;padding:8px;margin:6px 0 10px}
+.body{white-space:pre-wrap;line-height:1.5}
+footer{padding:10px 14px;color:#4d6278;font-size:11px;border-top:1px solid #cbd7e1;background:#eef3f8}
+.tiny{font-size:11px;color:#53697f}
+</style>
+<script>
+// Simple anchor scroller (no frameworks, 90s energy but modern UX)
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+function copyText(id){
+const txt=document.getElementById(id).innerText;
+navigator.clipboard.writeText(txt).then(()=>alert('Copied email to clipboard.'));
+}
+</script>
+</head>
+<body>
+<div id="wrap">
+<header>
+<div><strong>Cerulean Systems — Inbox Archive (Mirror)</strong></div>
+<div class="sub">Project 0:00 · November 1998 · Internal/External Correspondence</div>
+</header>
+
+<nav>
+<a href="#e1">DOC → Cerulean (Nov 9)</a>
+<a href="#e2">Cerulean → DOC (Nov 16)</a>
+<a href="#e3">Cerulean → G. Stroud (Nov 20)</a>
+<a href="#e4">G. Stroud → Cerulean (Nov 22)</a>
+<a href="#e5">Cerulean → G. Stroud (Nov 25)</a>
+</nav>
+
+<div class="layout">
+<!-- Sidebar list -->
+<aside class="side">
+<table class="mailbox">
+<tr><th>From</th><th>Subject</th><th>Date</th></tr>
+<tr onclick="go('e1')" style="cursor:pointer">
+<td class="from">E. Rourke (DOC)</td><td>Contingency Proposal for Year 2000 Systems</td><td>Nov 9, 1998</td>
+</tr>
+<tr onclick="go('e2')" style="cursor:pointer">
+<td class="from">Dr. H. Keats</td><td>Re: Contingency Proposal — Candidate Nomination</td><td>Nov 16, 1998</td>
+</tr>
+<tr onclick="go('e3')" style="cursor:pointer">
+<td class="from">Dr. H. Keats</td><td>Opportunity — Project 0:00 Participation</td><td>Nov 20, 1998</td>
+</tr>
+<tr onclick="go('e4')" style="cursor:pointer">
+<td class="from">G. Stroud</td><td>Re: Opportunity — Participation Terms</td><td>Nov 22, 1998</td>
+</tr>
+<tr onclick="go('e5')" style="cursor:pointer">
+<td class="from">Dr. H. Keats</td><td>Terms Accepted & Session Scheduling</td><td>Nov 25, 1998</td>
+</tr>
+</table>
+<div style="margin-top:10px">
+<a class="btn" href="javascript:window.scrollTo({top:0,behavior:'smooth'})">↑ Top</a>
+</div>
+</aside>
+
+<!-- Main content -->
+<section class="main">
+<!-- E1 -->
+<article class="card" id="e1">
+<h2>PROJECT 0:00 — INITIAL COMMUNICATION</h2>
+<div class="meta" id="e1meta">
+From: Evelyn Rourke &lt;e.rourke@doc.gov&gt;
+To: Dr. Harlan Keats &lt;h.keats@ceruleansys.com&gt;
+CC: Marcus Hale &lt;m.hale@ceruleansys.com&gt;
+Date: Mon, Nov 9, 1998 07:14:32 EST
+Subject: Contingency Proposal for Year 2000 Systems
+</div>
+<div class="body" id="e1body">Dr. Keats,
+
+Following Friday’s Y2K mitigation briefing, the Department of Commerce is authorizing exploration of a rapid-decision contingency framework capable of addressing infrastructure-wide date logic failures without operator intervention.
+
+Our primary concerns remain:
+1. Speed – Response times must be measured in milliseconds, not minutes.
+2. Flexibility – Must adapt to untested failure states.
+3. Autonomy – No external human approval in emergency mode.
+
+Your suggestion of embedding a human cognitive model into a machine-deployable environment is unconventional but merits review. The premise, as I understand it:
+
+- Capture the real-time decision-making process of a qualified subject under simulated crisis load.
+- Compile said process into executable logic, stripped of individual identity markers.
+- Deploy into critical systems as a live failsafe during rollover period (December 31, 1999 – January 1, 2000).
+
+Please provide within 14 days:
+- Candidate selection criteria.
+- Overview of “NeuroPattern Compilation” feasibility.
+- Projected legal/ethical risk assessment.
+- Proposed name for internal reference (temporary codename acceptable).
+
+This project will be classified until further notice under the internal title Project 0:00.
+
+Regards,
+Evelyn Rourke
+Department of Commerce – Y2K Infrastructure Task Force
+</div>
+<div style="margin-top:8px">
+<a class="btn" onclick="copyText('e1meta');copyText('e1body')">Copy email</a>
+</div>
+</article>
+
+<!-- E2 -->
+<article class="card" id="e2">
+<h2>PROJECT 0:00 — CANDIDATE NOMINATION</h2>
+<div class="meta" id="e2meta">
+From: Dr. Harlan Keats &lt;h.keats@ceruleansys.com&gt;
+To: Evelyn Rourke &lt;e.rourke@doc.gov&gt;
+CC: Marcus Hale &lt;m.hale@ceruleansys.com&gt;
+Date: Mon, Nov 16, 1998 10:03:11 EST
+Subject: Re: Contingency Proposal for Year 2000 Systems
+</div>
+<div class="body" id="e2body">Evelyn,
+
+Following your request for candidate selection criteria, I believe we have identified a highly suitable subject for NeuroPattern Compilation.
+
+Candidate: Gideon Stroud
+Position: Senior Systems Architect, Cerulean Systems – Infrastructure Division
+Experience: Over 20 years in real-time failure mitigation for high-security installations, including nuclear energy facilities, air defense networks, and Tier-1 financial systems.
+Clearances: Active Top Secret (DoD & DOE).
+
+Rationale:
+- Proven ability to make rapid, high-stakes operational decisions under severe pressure.
+- Comprehensive knowledge of both legacy and modern architecture ensures adaptability during unpredictable rollover failures.
+- Currently engaged in classified infrastructure failover simulations relevant to Y2K scenarios.
+- Personal circumstances (degenerative motor condition) make him open to unconventional contract structures and high-intensity participation.
+
+If approved, we can begin preliminary NeuroPattern baseline recordings within three weeks, pending legal clearance and informed consent procedures.
+
+Regards,
+Harlan Keats
+Chief Technical Officer
+Cerulean Systems, Inc.
+</div>
+<div style="margin-top:8px">
+<a class="btn" onclick="copyText('e2meta');copyText('e2body')">Copy email</a>
+</div>
+</article>
+
+<!-- E3 -->
+<article class="card" id="e3">
+<h2>PROJECT 0:00 — CANDIDATE OUTREACH</h2>
+<div class="meta" id="e3meta">
+From: Dr. Harlan Keats &lt;h.keats@ceruleansys.com&gt;
+To: Gideon Stroud &lt;g.stroud@ceruleansys.com&gt;
+Date: Fri, Nov 20, 1998 09:18:27 EST
+Subject: Opportunity — Project 0:00 Participation
+</div>
+<div class="body" id="e3body">Gideon,
+
+Following our recent Y2K readiness meetings, your name has come forward as a leading candidate for an advanced infrastructure failsafe program currently in development under Department of Commerce sponsorship.
+
+Project 0:00 aims to create an adaptive, human-grade decision-making system capable of stabilizing critical infrastructure in the event of unpredictable date logic failures during the Year 2000 rollover. Your extensive experience in high-stakes systems recovery, combined with your long-term service record here at Cerulean, positions you as uniquely qualified to contribute in a direct and lasting way.
+
+Participation would involve a short-term, intensive engagement over the next 10–12 months, with technical sessions to capture your real-time crisis response methodology under controlled simulation. The process has been designed for minimal physical strain, and we are prepared to structure your working conditions to suit your preferences — location, schedule, and methods — within the limits of the project’s operational budget.
+
+If you are open to discussion, I’d like to schedule a confidential briefing to walk you through the scope, security protocols, and potential long-term benefits to both you and the national infrastructure resilience effort.
+
+This is a rare opportunity to leave an enduring mark on the systems you’ve helped protect for decades.
+
+Regards,
+Harlan Keats
+Chief Technical Officer
+Cerulean Systems, Inc.
+</div>
+<div style="margin-top:8px">
+<a class="btn" onclick="copyText('e3meta');copyText('e3body')">Copy email</a>
+</div>
+</article>
+
+<!-- E4 -->
+<article class="card" id="e4">
+<h2>PROJECT 0:00 — CANDIDATE RESPONSE</h2>
+<div class="meta" id="e4meta">
+From: Gideon Stroud &lt;g.stroud@ceruleansys.com&gt;
+To: Dr. Harlan Keats &lt;h.keats@ceruleansys.com&gt;
+Date: Sun, Nov 22, 1998 18:47:02 EST
+Subject: Re: Opportunity — Project 0:00 Participation
+</div>
+<div class="body" id="e4body">Harlan,
+
+Thank you for considering me for this role. I have read the preliminary outline and I understand the urgency of this work in the context of the Y2K transition.
+
+I’m willing to participate, with the understanding that the nature of this project is both unusual and final. If my decision-making profile is to be recorded and translated into machine logic, I request the following conditions:
+
+1. Family Provision — Cerulean will guarantee ongoing financial support for my wife, Elaine, and our two children for a period of no less than twenty years, regardless of project outcome. This must be documented and legally binding.
+2. Non-Conscious Implementation — I am agreeing to share my professional instincts, not my personal identity. The programming should not be capable of thinking as I do beyond the scope of crisis decision-making. It should not retain my awareness, memories, or emotions.
+3. Medical Accommodation — All participation will be structured to minimize physical strain. Sessions will be scheduled around my current health requirements.
+
+I understand the confidentiality requirements and will comply fully. This may be the final contribution I can make in my career, and I want it to count — both for the systems I’ve worked to protect, and for the security of my family after I’m gone.
+
+If these terms can be met, I will move forward with the next steps.
+
+Regards,
+Gideon Stroud
+Senior Systems Architect
+Cerulean Systems, Inc.
+</div>
+<div style="margin-top:8px">
+<a class="btn" onclick="copyText('e4meta');copyText('e4body')">Copy email</a>
+</div>
+</article>
+
+<!-- E5 -->
+<article class="card" id="e5">
+<h2>PROJECT 0:00 — TERMS ACCEPTED</h2>
+<div class="meta" id="e5meta">
+From: Dr. Harlan Keats &lt;h.keats@ceruleansys.com&gt;
+To: Gideon Stroud &lt;g.stroud@ceruleansys.com&gt;
+Date: Wed, Nov 25, 1998 08:22:49 EST
+Subject: Re: Opportunity — Project 0:00 Participation
+</div>
+<div class="body" id="e5body">Gideon,
+
+We have reviewed your conditions for participation and can confirm that Cerulean Systems, in coordination with the Department of Commerce, agrees to each of your listed terms:
+
+1. Family Provision — A twenty-year guaranteed financial support contract will be executed and placed under legal seal prior to the start of any NeuroPattern recording sessions.
+2. Non-Conscious Implementation — The compiled program will be engineered strictly for adaptive decision-making under emergency conditions. Per your request, personal memory and self-awareness will not be preserved in the operational framework.
+3. Medical Accommodation — All recording procedures will be conducted in controlled, low-impact environments, with session schedules adapted to your health requirements.
+
+Your expertise and willingness to serve in this capacity are greatly appreciated. We believe this work will provide a lasting safeguard for critical infrastructure well beyond the Year 2000 transition.
+
+We propose to begin preliminary NeuroPattern baseline mapping on Monday, December 14, 1998, at our Research Annex B-12 in Jersey City. This will be a closed session with only essential project personnel present.
+
+Please confirm your availability so we can finalize travel and logistical arrangements.
+
+Regards,
+Harlan Keats
+Chief Technical Officer
+Cerulean Systems, Inc.
+</div>
+<div style="margin-top:8px">
+<a class="btn" onclick="copyText('e5meta');copyText('e5body')">Copy email</a>
+</div>
+</article>
+
+<div class="tiny">Tip: Use the sidebar table to jump between emails. “Copy email” grabs the headers and body to your clipboard.</div>
+</section>
+</div>
+
+<footer>
+© 1998–2001 Cerulean Systems (mirror). This is an archived presentation for internal training and audit. Some addresses and headers may be simplified for display.
+</footer>
+</div>
+</body>
+</html>
